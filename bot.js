@@ -11,6 +11,8 @@ const options = {
   channels: ['diarapak'],
 };
 
+const client = new tmi.Client(options);
+
 // Fonction pour envoyer un message toutes les 5 minutes
 function sendPeriodicMessage() {
   client.say('diarapak', "Bienvenue sur Pokémon Version Éclat Pourpre ! Vous pouvez diriger le jeu avec les commandes 'up', 'down', 'left', 'right', 'a', 'b', ainsi que 'haut', 'bas', 'gauche', 'droite'. Pour plus d'astuces, consultez : https://www.pokemontrash.com/club/vos-fangames-et-projets/(gba)-pokemon-version-eclat-pourpre/");
